@@ -87,6 +87,7 @@
 }
 .social a:hover {
   background-color: transparent;
+  color: #000;
 }
 .social a .fa {
   color: #fff;
