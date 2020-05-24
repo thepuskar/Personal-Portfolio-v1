@@ -1,0 +1,65 @@
+.home {
+  min-height: 100vh;
+  background-image: url("../img/hero.png");
+  background-size: cover;
+  background-position: center;
+  padding: 15px;
+}
+
+.full-screen {
+  min-height: 100vh;
+}
+.home-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+
+.block {
+  flex: 0 0 75%;
+  max-width: 75%;
+  color: #fff;
+  padding-left: 35px;
+  border-left: 3px solid #fff;
+  margin-top: 50px;
+}
+.block h1 {
+  font-size: 70px;
+  font-weight: 600;
+  margin: 0;
+  padding: 0;
+}
+.block h3 {
+  font-size: 25px;
+  font-weight: 500;
+  margin: 0;
+  padding: 0;
+}
+.block h6 {
+  font-size: 18px;
+  font-weight: 500;
+  margin: 0;
+  padding: 0;
+}
+.cv-btn {
+  padding-top: 20px;
+}
+.cv-btn a {
+  font-size: 14px;
+  color: #fff;
+  background-color: transparent;
+  border: 1px solid #fff;
+  border-radius: 4px;
+  padding: 12px 25px;
+  display: inline-block;
+  text-transform: uppercase;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+.cv-btn a:hover {
+  background-color: #fff;
+  color: #000; 
+}

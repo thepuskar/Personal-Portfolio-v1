@@ -1,0 +1,62 @@
+header {
+  position: absolute;
+  padding: 0px 15px;
+  left: 0px;
+  right: 0px;
+  border-bottom: 1px solid #423940;
+  z-index: 10;
+}
+.container {
+  max-width: 1140px;
+  margin: auto;
+}
+
+header .row {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.brand-name a {
+  font-size: 22px;
+  font-weight: 600;
+  color: #fff;
+  text-transform: uppercase;
+  position: relative;
+}
+
+.navbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.navbar ul li {
+  display: inline;
+  margin-left: 35px;
+}
+.navbar ul li a {
+  font-size: 15px;
+  line-height: 72px;
+  color: #fff;
+  font-weight: 600;
+  /* display: block; */
+  position: relative;
+}
+.navbar ul li a::before {
+  content: "";
+  height: 2px;
+  background-color: #fff;
+  width: 0%;
+  position: absolute;
+  right: 0px;
+  bottom: -25px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+.navbar ul li a:hover::before {
+  width: 100%;
+  left: 0px;
+}
+.navbar ul li a.active::before {
+  width: 100%;
+  left: 0;
+}
