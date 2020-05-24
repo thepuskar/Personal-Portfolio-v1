@@ -1,0 +1,97 @@
+.about {
+  padding: 100px 15px;
+}
+.title {
+  flex: 0 0 100%;
+  max-width: 100%;
+  margin-bottom: 40px;
+}
+
+.title h1 {
+  color: #000;
+  display: inline-block;
+  font-size: 35px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 0px 0px 10px;
+  position: relative;
+}
+.title h1::before {
+  content: "";
+  left: 0;
+  right: 30%;
+  position: absolute;
+  height: 2px;
+  background-color: rgb(93, 143, 249);
+  bottom: 0px;
+}
+.title p {
+  display: block;
+  font-size: 12px;
+  color: #838383;
+  font-weight: 400;
+  letter-spacing: 2px;
+}
+
+.img {
+  flex: 0 0 33.33%;
+  max-width: 33.33%;
+}
+.img img {
+  width: 100%;
+  border-radius: 4px;
+  display: block;
+}
+.text {
+  flex: 0 0 66.66%;
+  max-width: 56.66%;
+  padding-left: 90px;
+}
+.text h4 {
+  font-size: 25px;
+  font-weight: 600;
+  margin: 0 0 10px;
+  color: #000;
+}
+.text h6 {
+  font-size: 18px;
+  font-weight: 500;
+  margin: 0 0 25px;
+  color: #000;
+}
+.text h6 span {
+  color: rgb(93, 143, 249);
+}
+.text p {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #838383;
+}
+.social {
+  padding-top: 35px;
+}
+
+.social a {
+  height: 30px;
+  width: 30px;
+  background-color: #000;
+  display: inline-block;
+  border: 1px solid #000;
+  border-radius: 4px;
+  line-height: 28px;
+  text-align: center;
+  margin: 0px 1px;
+  transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+}
+.social a:hover {
+  background-color: transparent;
+}
+.social a .fa {
+  color: #fff;
+  font-size: 14px;
+}
+.social a .fa:hover {
+  color: #000;
+}

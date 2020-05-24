@@ -19,7 +19,7 @@ header .row {
 .brand-name a {
   font-size: 22px;
   font-weight: 600;
-  color: #fff;
+  color: rgb(236, 241, 250);
   text-transform: uppercase;
   position: relative;
 }
@@ -36,7 +36,7 @@ header .row {
 .navbar ul li a {
   font-size: 15px;
   line-height: 72px;
-  color: #fff;
+  color: rgb(236, 241, 250);
   font-weight: 600;
   /* display: block; */
   position: relative;
@@ -44,11 +44,11 @@ header .row {
 .navbar ul li a::before {
   content: "";
   height: 2px;
-  background-color: #fff;
+  background-color: rgb(236, 241, 250);
   width: 0%;
   position: absolute;
   right: 0px;
-  bottom: -25px;
+  bottom: -26px;
   cursor: pointer;
   transition: all 0.5s ease;
 }
