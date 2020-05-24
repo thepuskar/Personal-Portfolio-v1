@@ -39,14 +39,12 @@
 .box:hover::before {
   width: 100%;
 }
-.box:hover {
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-}
+
 .box .icon {
   height: 60px;
   width: 60px;
   background-color: rgb(93, 143, 249);
-  margin: 0 auto 20px;
+  margin: 15px auto 20px;
   border-radius: 50%;
 }
 .box .icon .fa {
@@ -65,4 +63,5 @@
   font-weight: 400;
   line-height: 24px;
   color: #838383;
+  margin: 5px 0 10px;
 }
