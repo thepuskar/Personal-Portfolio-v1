@@ -22,7 +22,7 @@
   right: 30%;
   position: absolute;
   height: 2px;
-  background-color: rgb(93, 143, 249);
+  background-color: #01143e;
   bottom: 0px;
 }
 .title p {
@@ -60,7 +60,26 @@
   color: #000;
 }
 .text h6 span {
-  color: rgb(93, 143, 249);
+  color: #5f88e0;
+  position: relative;
+}
+.text h6 span::before {
+  content: "";
+  left: 0;
+  right: 90%;
+  position: absolute;
+  height: 2px;
+  bottom: 0px;
+  transition: all 0.5s ease;
+}
+.text h6 span:hover::before {
+  content: "";
+  left: 0;
+  right: 0;
+  position: absolute;
+  height: 2px;
+  background-color: #5f88e0;
+  bottom: 0px;
 }
 .text p {
   font-size: 15px;

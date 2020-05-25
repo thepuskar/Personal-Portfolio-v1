@@ -27,7 +27,7 @@
 .box::before {
   content: "";
   height: 2px;
-  background-color: rgb(93, 143, 249);
+  background-color: #01143e;
   position: absolute;
   bottom: 0px;
   width: 50px;
@@ -43,11 +43,16 @@
 .box .icon {
   height: 60px;
   width: 60px;
-  background-color: rgb(93, 143, 249);
+  background-color: #01143e;
   margin: 15px auto 20px;
   border-radius: 50%;
 }
 .box .icon .fa {
+  font-size: 25px;
+  color: #fff;
+  line-height: 60px;
+}
+.box .icon .fas {
   font-size: 25px;
   color: #fff;
   line-height: 60px;
