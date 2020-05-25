@@ -21,6 +21,36 @@ a {
   display: flex;
   flex-wrap: wrap;
 }
+.title {
+  flex: 0 0 100%;
+  max-width: 100%;
+  margin-bottom: 40px;
+}
+
+.title h1 {
+  color: #000;
+  display: inline-block;
+  font-size: 35px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 0px 0px 10px;
+  position: relative;
+}
+.title h1::before {
+  content: "";
+  left: 0;
+  right: 30%;
+  position: absolute;
+  height: 2px;
+  background-color: #01143e;
+  bottom: 0px;
+}
+.title p {
+  font-size: 12px;
+  color: #838383;
+  font-weight: 400;
+  letter-spacing: 2px;
+}
 .text-center {
   text-align: center !important;
 }
@@ -29,4 +59,7 @@ a {
 }
 .text-left {
   text-align: left !important;
+}
+.align-items-center {
+  align-items: center;
 }
