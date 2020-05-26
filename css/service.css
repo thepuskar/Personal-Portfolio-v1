@@ -1,11 +1,12 @@
 .services {
-  background-color: #fff;
+  background-color: rgb(236, 241, 250);
   padding: 100px 0px 70px;
 }
 
 .services .container .row .title h1::before {
   left: 30%;
 }
+
 .service-content {
   flex: 0 0 100%;
   max-width: 100%;
@@ -13,8 +14,9 @@
   flex-wrap: wrap;
   justify-content: space-between;
 }
+
 .box {
-  background-color: rgb(236, 241, 250);
+  background-color: #fff;
   flex: 0 0 calc(33.33% - 20px);
   max-width: calc(33.33% - 20px);
   margin-bottom: 30px;
@@ -24,6 +26,7 @@
   text-align: center;
   position: relative;
 }
+
 .box::before {
   content: "";
   height: 2px;
@@ -36,6 +39,7 @@
   margin: auto;
   transition: all 0.5s ease;
 }
+
 .box:hover::before {
   width: 100%;
 }
@@ -47,22 +51,26 @@
   margin: 15px auto 20px;
   border-radius: 50%;
 }
+
 .box .icon .fa {
   font-size: 25px;
   color: #fff;
   line-height: 60px;
 }
+
 .box .icon .fas {
   font-size: 25px;
   color: #fff;
   line-height: 60px;
 }
+
 .box h5 {
   font-size: 16px;
   font-weight: 600;
   color: #000;
   margin: 0;
 }
+
 .box p {
   font-size: 15px;
   font-weight: 400;
