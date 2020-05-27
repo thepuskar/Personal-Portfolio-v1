@@ -1,0 +1,135 @@
+.portfolio {
+    background-color: #fff;
+    padding: 100px 15px;
+}
+
+.portfolio .container .row .title h1::before {
+    left: 30%;
+}
+
+.filter-btn {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+.filter-btn ul {
+    list-style: none;
+    text-align: center;
+    padding: 0;
+}
+
+.filter-btn ul li {
+    color: #000;
+    font-weight: 500;
+    font-size: 15px;
+    display: inline-block;
+    margin: 0px 8px;
+    text-transform: uppercase;
+    cursor: pointer;
+    padding-bottom: 0;
+}
+
+.filter-btn ul li.active {
+    color: #5f88e0;
+    border-bottom: 2px solid #5f88e0;
+}
+
+.filter-btn {
+    margin-bottom: 25px;
+}
+
+.gallery {
+    flex: 0 0 100%;
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.item {
+    flex: 0 0 calc(33.33% - 10px);
+    max-width: calc(33.33% - 10px);
+    margin-bottom: 16px;
+    position: relative;
+}
+
+.item img {
+    width: 100%;
+    display: block;
+}
+
+.item .overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 10;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: all 0.5s ease;
+}
+
+.item:hover .overlay {
+    opacity: 1;
+}
+
+.overlay .fa {
+    height: 50px;
+    width: 50px;
+    background-color: #5f88e0;
+    color: #fff;
+    display: inline-block;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.item:hover .overlay .fa {
+    animation: galleryIcon 0.8s ease;
+    -webkit-animation: galleryIcon 0.8s ease;
+}
+
+
+
+@keyframes galleryIcon {
+    0% {
+        transform: translate(-20px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translate(0);
+        opacity: 1;
+    }
+}
+
+.overlay h4 {
+    margin-top: 15px;
+    font-size: 25px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.item:hover .overlay h4 {
+    animation: galleryText 0.8s ease;
+    -webkit-animation: galleryText 0.8s ease;
+}
+
+@keyframes galleryText {
+    0% {
+        transform: translate(20px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translate(0);
+        opacity: 1;
+    }
+}

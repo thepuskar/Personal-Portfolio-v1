@@ -30,7 +30,7 @@
 .box::before {
   content: "";
   height: 2px;
-  background-color: #01143e;
+  background-color: #5f88e0;
   position: absolute;
   bottom: 0px;
   width: 50px;
@@ -47,7 +47,7 @@
 .box .icon {
   height: 60px;
   width: 60px;
-  background-color: #01143e;
+  background-color: #5f88e0;
   margin: 15px auto 20px;
   border-radius: 50%;
 }
