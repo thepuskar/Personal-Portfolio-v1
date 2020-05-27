@@ -48,7 +48,7 @@ a {
   position: absolute;
   height: 2px;
   background-color: #5f88e0;
-  bottom: 0px;
+  bottom: -2px;
 }
 
 .title p {

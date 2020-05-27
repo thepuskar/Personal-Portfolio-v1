@@ -47,3 +47,58 @@ galleryItem.forEach(function (element) {
         lightboxImg.src = element.querySelector("img").getAttribute("src");
     })
 })
+
+
+const sliderContainer = document.querySelector(".testimonials-box");
+const slider = sliderContainer.children;
+const containerWidth = sliderContainer.offsetWidth;
+
+const margin = 30;
+let itemPerSlide = 0;
+
+const responsive = [{
+        breakPoint: {
+            width: 0,
+            item: 1
+        }
+    },
+    {
+        breakPoint: {
+            width: 991,
+            item: 2
+        }
+    }
+]
+
+function load() {
+    for (let i = 0; i < responsive.length; i++) {
+        if (window.innerWidth > responsive[i].breakPoint.width) {
+            itemPerSlide = responsive[i].breakPoint.item;
+        }
+    }
+    start();
+}
+
+function start() {
+    for (let i = 0; i < slider.length; i++) {
+        slider[i].style.width = (containerWidth / itemPerSlide) - margin + "px";
+        slider[i].style.margin = margin / 2 + "px";
+    }
+    sliderContainer.style.width = containerWidth * itemPerSlide + "px";
+
+    const sliderDot = Math.ceil(slider.length / itemPerSlide);
+
+    for (let i = 0; i < sliderDot; i++) {
+        const div = document.createElement("div");
+        div.id = i;
+        div.setAttribute("onclick", "controlSlide(this)")
+        if (i = 0) {
+            div.classList.add("active")
+        }
+        document.querySelector(".slider").appendChild(div);
+    }
+}
+window.onload = load();
+
+
+// querySelector(".testimonials-img")
