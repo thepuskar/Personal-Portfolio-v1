@@ -19,3 +19,31 @@ for (let i = 0; i < filterBtn.length; i++) {
         }
     })
 }
+
+const closeLightbox = document.querySelector(".close-lightbox");
+const lightbox = document.querySelector(".lightbox");
+const lightboxImg = lightbox.querySelector("img")
+
+lightbox.addEventListener('click', function () {
+    if (event.target != lightboxImg) {
+        lightbox.classList.remove("show")
+        lightbox.classList.add("hide")
+    }
+})
+
+closeLightbox.addEventListener("click", function () {
+    lightbox.classList.remove("show")
+    lightbox.classList.add("hide")
+})
+
+const gallery = document.querySelector(".gallery");
+
+const galleryItem = document.querySelectorAll('.item')
+
+galleryItem.forEach(function (element) {
+    element.querySelector(".fa-plus").addEventListener("click", function () {
+        lightbox.classList.remove("hide")
+        lightbox.classList.add("show")
+        lightboxImg.src = element.querySelector("img").getAttribute("src");
+    })
+})

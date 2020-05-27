@@ -143,9 +143,16 @@
     bottom: 0;
     z-index: 100;
     background-color: rgba(0, 0, 0, 0.6);
-    display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.show {
+    display: flex;
+}
+
+.hide {
+    display: none;
 }
 
 .close-lightbox {
