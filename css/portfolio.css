@@ -176,3 +176,47 @@
     display: block;
 
 }
+
+.message {
+    background-color: #01143e;
+    padding: 40px 15px;
+}
+
+.message .message-text {
+    flex: 0 0 66.66%;
+    max-width: 66.66%;
+}
+
+.message .message-text h2 {
+    font-size: 20px;
+    color: #fff;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+    line-height: 35px;
+}
+
+.message .button {
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+    text-align: right;
+}
+
+.message .button a {
+    font-size: 14px;
+    color: rgb(236, 241, 250);
+    background-color: transparent;
+    border: 1px solid rgb(236, 241, 250);
+    border-radius: 4px;
+    padding: 12px 25px;
+    display: inline-block;
+    text-transform: uppercase;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.message .button a:hover {
+    background-color: #fff;
+    color: #000;
+}
