@@ -4,6 +4,10 @@
 
 This is an easy-to-customize personal portfolio template that was created with HTML, CSS, and JavaScript. It is a lightweight and fully responsive, as well as comes with the p grid system and loaded with Font Awesome. Alternatively, you can edit styles, colors, and scripts fairly easily.
 
+# 👇Demo
+
+![demo](https://user-images.githubusercontent.com/33395312/83201059-70d48980-a164-11ea-832a-7c6295fbd07e.gif)
+
 # 📋Features
 
 - About me
