@@ -54,6 +54,7 @@ const containerWidth = sliderContainer.offsetWidth;
 
 const margin = 30;
 let itemPerSlide = 0;
+let sliderDot;
 
 const responsive = [
   {
@@ -88,7 +89,7 @@ function start() {
   }
   sliderContainer.style.width = totalWidth + "px";
 
-  const sliderDot = Math.ceil(slider.length / itemPerSlide);
+  sliderDot = Math.ceil(slider.length / itemPerSlide);
 
   for (let i = 0; i < sliderDot; i++) {
     const div = document.createElement("div");
@@ -102,8 +103,12 @@ function start() {
 }
 
 let currentSlide = 0;
+let autoSlide = 0;
 
 function controlSlide(element) {
+  clearInterval(timer);
+    timer = setInterval(autoPlay, 5000);
+    autoSlide = element.id;
   currentSlide = element.id;
   changeSlide(currentSlide);
 }
@@ -117,6 +122,18 @@ function changeSlide(currentSlide) {
 
   sliderContainer.style.marginLeft = -(containerWidth * currentSlide) + "px";
 }
+
+function autoPlay() {
+  if (autoSlide == sliderDot - 1) {
+    autoSlide = 0;
+  } else {
+    autoSlide++;
+  }
+  changeSlide(autoSlide);
+}
+
+let timer = setInterval(autoPlay, 5000);
+
 window.onload = load();
 
 // querySelector(".testimonials-img")
