@@ -7,6 +7,23 @@ header {
   z-index: 10;
 }
 
+.fixed {
+  background-color: rgb(236, 241, 250);
+  position: fixed;
+  border-color: #eee;
+  animation: fixHeader 1s ease;
+}
+
+@keyframes fixHeader {
+  0% {
+    transform: translateY(-100%);
+  }
+
+  100% {
+    transform: translateY(0%);
+  }
+}
+
 .container {
   max-width: 1140px;
   margin: auto;
@@ -23,6 +40,10 @@ header .row {
   color: rgb(236, 241, 250);
   position: relative;
   font-family: 'Lobster', cursive;
+}
+
+.fixed .brand-name a {
+  color: #000;
 }
 
 .navbar ul {
@@ -45,6 +66,10 @@ header .row {
   position: relative;
 }
 
+.fixed .navbar ul li a {
+  color: #000;
+}
+
 .navbar ul li a::before {
   content: "";
   height: 2px;
@@ -52,9 +77,13 @@ header .row {
   width: 0%;
   position: absolute;
   right: 0px;
-  bottom: -26px;
+  bottom: -27px;
   cursor: pointer;
   transition: all 0.5s ease;
+}
+
+.fixed .navbar ul li a::before {
+  background-color: #5f88e0;
 }
 
 .navbar ul li a:hover::before {
