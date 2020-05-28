@@ -58,8 +58,7 @@ const margin = 30;
 let itemPerSlide = 0;
 let sliderDot;
 
-const responsive = [
-  {
+const responsive = [{
     breakPoint: {
       width: 0,
       item: 1,
@@ -136,3 +135,8 @@ function autoPlay() {
 let timer = setInterval(autoPlay, 5000);
 
 window.onload = load();
+
+
+//Footer Year 
+var year = document.getElementById("year");
+year.innerHTML = new Date().getFullYear();

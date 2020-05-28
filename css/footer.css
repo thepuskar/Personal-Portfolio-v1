@@ -1,0 +1,46 @@
+footer {
+    padding: 70px 15px;
+    background-color: #01143e;
+}
+
+.footer-logo {
+    flex: 0 0 100%;
+    max-width: 100%;
+    text-align: center;
+    font-size: 45px;
+    font-family: 'Lobster', cursive;
+    color: rgb(236, 241, 250);
+    font-weight: 900;
+}
+
+.social-link {
+    flex: 0 0 100%;
+    max-width: 100%;
+    text-align: center;
+    padding-top: 15px;
+}
+
+.social-link a {
+    color: #999999;
+    display: inline-block;
+    margin: 0px 12px;
+    transition: all 0.5s ease;
+}
+
+.social-link a:hover {
+    color: rgb(236, 241, 250)
+}
+
+.copyright {
+    background-color: #01143e;
+    border-top: 1px solid #423940;
+    padding: 15px;
+}
+
+.copyright p {
+    margin: 0;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+    color: rgb(236, 241, 250);
+}
