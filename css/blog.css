@@ -24,9 +24,18 @@
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
+.blog-img {
+    overflow: hidden;
+}
+
 .blog-img img {
     max-width: 100%;
     display: block;
+    transition: all 0.5s ease;
+}
+
+.blog-box:hover .blog-img img {
+    transform: scale(1.1);
 }
 
 .blog-info {
