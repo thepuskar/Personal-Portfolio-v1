@@ -1,0 +1,84 @@
+.blog {
+    background-color: #fff;
+    padding: 100px 0px;
+}
+
+.blog .container .row .title h1::before {
+    left: 30%;
+}
+
+.blog-content {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 0 0 100%;
+    max-width: 100%;
+    justify-content: space-between;
+}
+
+.blog-box {
+    flex: 0 0 calc(33.33% - 20px);
+    max-width: calc(33.33% - 20px);
+    border: 1px solid #ddd;
+    background-color: rgb(236, 241, 250);
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.blog-img img {
+    max-width: 100%;
+    display: block;
+}
+
+.blog-info {
+    padding: 10px 0;
+}
+
+.blog-text {
+    padding: 10px;
+}
+
+.blog-info span {
+    font-size: 12px;
+    color: #838383;
+    display: inline-block;
+
+}
+
+.blog-info span:nth-child(2) {
+    border-left: 1px solid #ddd;
+    padding-left: 8px;
+    margin-left: 10px;
+}
+
+.blog-box h3 {
+    font-size: 22px;
+    font-weight: 600;
+    color: #000;
+    margin: 0;
+    padding: 0 0 10px;
+}
+
+.blog-box p {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #000;
+    color: #838383;
+    margin: 0 0 10px;
+}
+
+.blog-box a {
+    font-size: 14px;
+    color: #5f88e0;
+    text-transform: uppercase;
+    font-weight: 600;
+    display: inline-block;
+    border-bottom: 2px solid #5f88e0;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.blog-box a:hover {
+    color: #000;
+    border-color: #000;
+}

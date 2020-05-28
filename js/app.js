@@ -48,6 +48,8 @@ galleryItem.forEach(function (element) {
   });
 });
 
+// Testimonials Slider
+
 const sliderContainer = document.querySelector(".testimonials-box");
 const slider = sliderContainer.children;
 const containerWidth = sliderContainer.offsetWidth;
@@ -107,8 +109,8 @@ let autoSlide = 0;
 
 function controlSlide(element) {
   clearInterval(timer);
-    timer = setInterval(autoPlay, 5000);
-    autoSlide = element.id;
+  timer = setInterval(autoPlay, 5000);
+  autoSlide = element.id;
   currentSlide = element.id;
   changeSlide(currentSlide);
 }
@@ -131,9 +133,6 @@ function autoPlay() {
   }
   changeSlide(autoSlide);
 }
-
 let timer = setInterval(autoPlay, 5000);
 
 window.onload = load();
-
-// querySelector(".testimonials-img")
