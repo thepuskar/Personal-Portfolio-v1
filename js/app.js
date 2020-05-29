@@ -22,8 +22,17 @@ a.forEach(function (element) {
     for (let i = 0; i < a.length; i++) {
       a[i].classList.remove("active")
     }
-    this.classList.add("active")
+    this.classList.add("active");
+    document.querySelector(".navbar").classList.toggle("show");
   })
+})
+
+//Hamburger
+
+const hamBurger = document.querySelector(".hamburger");
+
+hamBurger.addEventListener("click", function () {
+  document.querySelector(".navbar").classList.toggle("show");
 })
 
 //Portfolio Gallery

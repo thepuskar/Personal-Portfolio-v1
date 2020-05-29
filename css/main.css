@@ -4,7 +4,7 @@
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css");
 @import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
 
-html{
+html {
   scroll-behavior: smooth;
 }
 
@@ -105,4 +105,158 @@ a {
 .button a:hover {
   background-color: #fff;
   color: #000;
+}
+
+@media(max-width: 991px) {
+  .block h1 {
+    font-size: 50px;
+  }
+}
+
+@media(max-width: 767px) {
+  .home .home-content .block h1 {
+    font-size: 40px;
+  }
+
+  .home .home-content .block h3 {
+    font-size: 25px;
+  }
+
+  header {
+    padding: 15px;
+    position: fixed;
+    background-color: rgb(236, 241, 250);
+    border-bottom: 1px solid #eee;
+  }
+
+  .brand-name .logo {
+    color: #01143e;
+  }
+
+  .hamburger .fa {
+
+    display: inline-block;
+  }
+
+  .navbar {
+    position: absolute;
+    background-color: rgb(236, 241, 250);
+    width: 100%;
+    left: 0px;
+    top: 60px;
+    padding: 15px;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    display: none;
+  }
+
+  .navbar .show {
+    display: block;
+  }
+
+  .navbar ul li {
+    display: block;
+    margin-left: 0;
+
+  }
+
+  .navbar ul li a {
+    line-height: 42px;
+    color: #01143e;
+  }
+
+  .navbar ul li a::before {
+    bottom: -3px;
+    background-color: #01143e;
+  }
+
+  .about .img {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .about .text {
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding-left: 0px;
+    padding-top: 30px;
+  }
+
+  .service-content .box {
+    padding: 30px;
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .gallery .item {
+    flex: 0 0 50%;
+    max-width: 50%;
+    position: relative;
+    padding: 8px;
+  }
+
+  .message .container .row .message-text {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .message .button {
+    flex: 0 0 100%;
+    max-width: 100%;
+    text-align: left;
+
+  }
+
+  .blog-content {
+    padding: 40px 20px;
+  }
+
+  .blog-content .blog-box {
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 40px;
+  }
+
+  .contact-form {
+    padding: 20px;
+  }
+
+  .contact-form .col-6 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+
+@media(max-width: 500px) {
+  .home .home-content .block {
+    padding-left: 20px;
+  }
+
+  .home .home-content .block h1 {
+    font-size: 30px;
+  }
+
+  .home .home-content .block h3 {
+    font-size: 15px;
+  }
+
+  .about .about-content .social a {
+    margin: 0px 3px;
+  }
+
+  .gallery .item {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .testimonials-box .testimonials-img {
+    flex-wrap: wrap;
+    text-align: center;
+  }
+
+  .testimonials-img .test-img {
+    flex: 0 0 100%;
+    max-width: 100%;
+
+  }
 }

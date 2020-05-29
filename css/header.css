@@ -4,7 +4,7 @@ header {
   left: 0px;
   right: 0px;
   border-bottom: 1px solid #423940;
-  z-index: 10;
+  z-index: 11;
 }
 
 .fixed {
@@ -12,6 +12,7 @@ header {
   position: fixed;
   border-color: #eee;
   animation: fixHeader 1s ease;
+  z-index: 11;
 }
 
 @keyframes fixHeader {
@@ -44,6 +45,20 @@ header .row {
 
 .fixed .brand-name a {
   color: #000;
+}
+
+.hamburger .fa {
+  font-size: 20px;
+  background-color: rgb(236, 241, 250);
+  color: #01143e;
+  display: none;
+  height: 30px;
+  width: 35px;
+  border-radius: 2px;
+  line-height: 30px;
+  text-align: center;
+  cursor: pointer;
+  border: 1px solid #eee;
 }
 
 .navbar ul {

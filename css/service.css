@@ -1,6 +1,6 @@
 .services {
   background-color: rgb(236, 241, 250);
-  padding: 100px 0px 70px;
+  padding: 100px 15px 70px;
 }
 
 .services .container .row .title h1::before {
