@@ -6,7 +6,7 @@ This is an easy-to-customize personal portfolio template that was created with H
 
 # 👇Demo
 
-![demo](https://user-images.githubusercontent.com/33395312/83201059-70d48980-a164-11ea-832a-7c6295fbd07e.gif)
+<a href="https://personalportfoliov1.netlify.app/">LINK</a>
 
 # 📋Features
 
